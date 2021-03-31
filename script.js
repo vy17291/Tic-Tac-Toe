@@ -127,7 +127,7 @@ let board = ["","","","","","","","",""];
                 modal.style.display = "block";
                 showResult.innerHTML = "You Lose"; 
             }
-            if (gameBoard.getEmtyField() == "0") {
+            if (gameBoard.getEmtyField() == "0" && !gameBoard.checkWinner("o") && !gameBoard.checkWinner("x")) {
                 modal.style.display = "block";
                 showResult.innerHTML = "Pair"; 
             }
